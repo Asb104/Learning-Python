@@ -1,0 +1,21 @@
+truthy=True
+falsy=False
+#showing simple bool var
+age = 20
+age_over_17 = age > 17
+age_17_and_under = age <= 17
+my_number = 7
+user_number = int(input("Enter a number: "))
+
+#notice python generates a response on its own for booleans
+print(my_number == user_number)
+
+#make sure age is between 5-60
+validate_age = age >=5 and age<=60
+print(validate_age)
+#negatoin for python
+print(not validate_age)
+
+What you should review
+What would the value of cmp be at the end of this code segment? x = False cmp = x or 18
+Lecture 12 Boolean and comparisons in Python
