@@ -1,0 +1,18 @@
+name = 'Jose'
+greeting = 'Hello, ' + name
+print(greeting)
+print(f'This Program Will Display How Many Seconds')
+print(f'You Have Been Alive.\n')
+name = input(f'What is your name? : ')
+print(f'Hello {name} and welcome to my program!')
+age = int(input(f'What is your current age? : '))
+age_to_months = int(age * 12)
+months_to_days = int(age_to_months * 30)
+days_to_hours = int(months_to_days * 24)
+hours_to_minutes = int(days_to_hours * 60)
+minutes_to_seconds = int(hours_to_minutes * 60)
+print(f'You have lived for {minutes_to_seconds} seconds')
+
+#What you should review
+#What would the value of z be at the end of this segment?x = '56'z = int(x) * 2
+#Lecture 10 Getting user input in Python
