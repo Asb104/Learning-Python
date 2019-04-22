@@ -1,0 +1,23 @@
+set_1 = {1,2,3,4,5}
+set_2 = {1,3,5,7,9}
+
+
+# Set_1 \/ Set_2
+print(set_1.intersection(set_2))
+#ShortCut
+print(f'You can see it gives the same result: ')
+print(set_1 & set_2)
+print(f'\n')
+
+#Set_1 /\ Set_2
+print(set_1.union(set_2))
+#ShortCut
+print(f'You can see it gives the same result: ')
+print(set_1 | set_2)
+print(f'\n')
+
+#Set_1 - Set_2 or commonly written Set_1\Set_2
+print(set_1.difference(set_2))
+#ShortCut
+print(f'You can see it gives the same result: ')
+print(set_1 - set_2)
