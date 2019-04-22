@@ -1,0 +1,33 @@
+
+my_homies = {
+'Andrew':6,
+'Dana':3,
+'Tyler':4,
+'Derek':3,
+}
+
+my_homies = {
+'Andrew': {'Last seen' : 6},
+'Dana': {'Last Seen' : 3},
+'Tyler':4,
+'Derek':3,
+}
+players = [
+  {
+    'name': 'Andrew',
+    'numbers': (10,33,45,67)
+  },
+  {
+    'name' : 'Tyler',
+    'numbers' : (5,15,25,35)
+
+
+  } 
+]
+
+player_one = players[0]
+print(f'The first players name is: ' + player_one['name'])
+print(f'The players numbers are: ') 
+print(player_one['numbers'])
+print(f'These numbers add up to: ')
+print(sum(player_one['numbers']))
