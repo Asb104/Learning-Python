@@ -1,0 +1,54 @@
+my_variables = 'hello'
+my_listof_variables = ['Dana', 'Andrew', 'Love', 'Each-Other']
+my_tuple_variables = ('Dana', 'Andrew', 'Love', 'Each-Other')
+my_setof_variables = {'Dana', 'Andrew', 'Love', 'Each-Other'}
+print(my_listof_variables)
+print(my_tuple_variables)
+print(my_setof_variables)
+short_tuple = ('hello',)
+#without the comma at the end of the string, it will not be a tuple
+print(short_tuple)
+
+#-------------------------------------#
+
+print(my_listof_variables[0])
+print(my_listof_variables[1])
+print(my_listof_variables[2])
+print(my_listof_variables[3])
+
+
+print(my_tuple_variables[0])
+#sets do not use indexing so can be called using [] subscript
+#print(my_setof_variables[0])
+
+#NOTE:: LIST == [] == APPEND (BC ORDER)
+#       TUPLE == {} == ADD OR +=
+#       SET == () == ADD OR +=
+
+
+
+
+#NOTE: After a list is created and it has already been printed another element can be "appened" onto the end of the list as follows
+
+my_listof_variables.append('a fuck ton')
+print(my_listof_variables)
+
+
+
+#appending does not work with a tuple
+#my_tuple_variables.append('a fuck ton') == BAD
+
+#here is the proper way of writing it
+
+my_tuple_variables += ('a fuck ton',)
+#Note just like in c++ += operations work
+
+#since sets are not indexed and list every member only once, we can only "add" to a list
+ #lets add another element that already exist
+my_setof_variables.add('Dana')
+print(my_setof_variables)
+#the set does not change...
+#add a new member
+my_setof_variables.add('Eva and Nova')
+print(my_setof_variables)
+#this helps show the properties of the set
