@@ -1,0 +1,30 @@
+is_programmer = False
+while not is_programmer:
+  print('Learn programming')
+  user_is_programmer = input('Have you learnt programming? (yes/no) \n')
+  is_programmer = user_is_programmer == 'yes'
+print('Congratz, you are a programmer! \n\n')
+
+iterator = 0
+while iterator < 10:
+  print(f'This is the {iterator} iteration of the while loop.')
+  iterator = iterator + 1
+
+print ('\n')
+print ('Lets cook some food!\n We need to preheat the oven..')
+
+oven_temp = 0
+while oven_temp < 300:
+  print('Heating...')
+  oven_temp += 15
+  print(f'Current oven temperature is {oven_temp} degrees')
+
+print('Oven is ready to cook your food!\n\n')
+
+user_input = input('To view the menu type "p" for Print.\nTo exit without viewing the menu press "q" for Quit.\n' )
+while bool(user_input == 'q') is False:
+  print ('*menu here*')
+  user_input = input('To view the menu again, type "p" for Print.\nTo exit without viewing the menu press "q" for Quit.\n' )
+
+
+print('Thank you for using the menu')
