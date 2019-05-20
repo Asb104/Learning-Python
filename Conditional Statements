@@ -1,0 +1,74 @@
+programmer = True
+
+if programmer is True:
+  print('You are awesome')
+
+print('we are no longer in the if statement')
+
+is_programmer = False
+if is_programmer is True:
+  print('this line will not show')
+else:
+  print('but this line will show\n')
+if is_programmer is False:
+  print('learn to program\n')
+
+#negation
+if is_programmer is not True: 
+  print('this is negation \n ') 
+
+#just like C++ if statements default to true
+if programmer:
+  print('defaults to true work!\n')
+
+#next remember that else if statemennts can smooth user experience
+ur_awesome = True
+ur_programmer = True
+
+if (ur_awesome and ur_programmer):
+  print('You are awesome and a programmer')
+elif ur_awesome:
+  print('You are just awesome')
+elif ur_programmer:
+  print('You are just a programmer')
+else:  
+  print('You are neither awesome or a programmer')
+
+#here we can see how python behaves with conditional statements
+  
+ur_awesome = False
+ur_programmer = True
+
+if (ur_awesome and ur_programmer):
+  print('You are awesome and a programmer')
+elif ur_awesome:
+  print('You are just awesome')
+elif ur_programmer:
+  print('You are just a programmer')
+else:  
+  print('You are neither awesome or a programmer')
+
+
+ur_awesome = True
+ur_programmer = False
+
+if (ur_awesome and ur_programmer):
+  print('You are awesome and a programmer')
+elif ur_awesome:
+  print('You are just awesome')
+elif ur_programmer:
+  print('You are just a programmer')
+else:  
+  print('You are neither awesome or a programmer')
+
+ur_awesome = False
+ur_programmer = False
+
+if (ur_awesome and ur_programmer):
+  print('You are awesome and a programmer')
+elif ur_awesome:
+  print('You are just awesome')
+elif ur_programmer:
+  print('You are just a programmer')
+else:  
+  print('You are neither awesome or a programmer')
