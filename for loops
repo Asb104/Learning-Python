@@ -1,0 +1,27 @@
+primes = [2,3,5,11]
+for prime in primes:
+  print(f'The number {prime} is a prime number')
+
+
+kids_ages = (5, 9, 14)
+for age in kids_ages:
+  print(f'I have a {age} year old kid')
+
+
+#using the range function
+#the range function is a generator
+for i in range(5):
+  print(range(i,5))
+
+#using for loops in dictionary
+
+friend_dic = {
+'Andrew': 23,
+'Tyler': 22,
+'Derek': 22,
+'Linda': 0,
+'Ken': 0
+}
+print(friend_dic.items())
+for name, days in friend_dic.items():
+  print(f'I last saw {name} {days} days ago ')
