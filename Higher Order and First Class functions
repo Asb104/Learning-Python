@@ -1,0 +1,29 @@
+def add_two(x, y):
+  return x+y
+
+#python has a nifty was of writting a getter function inline
+# first call functions such as lambda functions are functions that can be passed as a parameter for a higher order function such as this lambda function 
+
+lambda x, y : x+y
+sum = lambda x, y : x+y
+
+var = add_two(18, 24)
+print(var)
+
+#a higher order function is a function that accepts another function as a parameter such as this who function
+
+def who(data, identify):
+  return identify(data)
+
+#def my_identifying_funct(data):
+ # return data['name']
+  
+user = {'name' : 'Andrew', 'surname' : 'Baker'}
+
+#print(who(user, my_identifying_funct))
+
+#look who a lambda function can simplify this
+
+print(who(user, lambda x: x['name']))
+
+#using this method we wouldnt need my_identifying_funct() so we will commit it out.
