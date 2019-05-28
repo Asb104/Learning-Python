@@ -1,0 +1,27 @@
+quality_ofCar=['good', 'good', 'good', 'bad', 'good']
+
+counter = 1
+for i in quality_ofCar:
+  
+  print(f'Car Number: {counter}\nCar Quality:{i} ')
+  if i == 'bad':
+   print('Stopping the production line')
+   break
+  counter = counter + 1
+
+print('\n')  
+
+for num in range(2,10):
+  if num % 2 == 0:
+    print(f'The number {num} is even.')
+    continue
+  print(f'Found the number {num}.')  
+
+print('\n')  
+
+#nested loop to find prime numbers between 2-100
+
+for n in range(2,101):
+  for i in range(2,n):
+    if n % i == 0:
+      print(f'{n} equals {i} * {n//i}.  This number is not prime')
