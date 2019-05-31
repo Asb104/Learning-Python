@@ -1,0 +1,86 @@
+""""
+-Enter "add" to add a movie
+-Enter "list" to view the list of movies you have
+-Enter "find" to find a movie you want
+-Enter "quit" to kill the program
+
+Task:
+-Decide where to store the movie
+-What is the format of the movie
+-Create a user interface / get user input
+-Allow user to add movies and movie details
+-Show all added movies
+-Find a movie
+-Kill the program
+"""
+
+#create movie list variable
+movies = []
+
+def userMenu():
+    user_input=input('-Enter <add> to add a movie\n-Enter <list> to view the list of movies you have\n-Enter <find> to find a movie you want\n-Enter <quit> to kill the program\n:')
+    while user_input != 'quit':
+        if user_input == 'list':
+            show_movie(movies)
+        elif user_input == 'find':
+            search_movie()
+        elif user_input == 'quit':
+            kill_program()
+        elif user_input == 'add':
+            add_movie()
+        else:
+            print('Unknow Command :: Please enter command again.')
+        user_input = input('-Enter <add> to add a movie\n-Enter <list> to view the list of movies you have\n-Enter <find> to find a movie you want\n-Enter <quit> to kill the program\n:')
+
+
+def add_movie():
+    name = input('Enter a movie name\n:')
+    director = input('Enter this movies director\n:')
+    year = input('Enter the year this movie was created\n: ')
+
+    movies.append({
+        'Name' : name,
+        'Director' : director,
+        'Year' :  year
+    })
+
+
+def show_movie(movie_list):
+    for movie in movie_list:
+        show_movie_details(movie)
+
+
+def show_movie_details(movie):
+    print(f"Name: {movie['Name']}")
+    print(f"Director: {movie['Director']}")
+    print(f"Year: {movie['Year']}")
+
+
+def search_movie():
+    search_variable = input('What variable of the movies are you trying to serach? (Name, Director, Year)\n:')
+    looking_for = input('What are you searching for?')
+
+
+    found_movies = attribute_finder(movies, looking_for, lambda x: x[search_variable])
+    for i in found_movies:
+        display_found_movies(i)
+
+
+def display_found_movies(x):
+    print(f"Name: {x['Name']}")
+    print(f"Director: {x['Director']}")
+    print(f"Year: {x['Year']}")
+
+
+def attribute_finder(items, expected, find):
+    found = []
+
+    for i in movies:
+        if find(i) == expected:
+            found.append(i)
+
+    return found
+
+
+
+userMenu()
