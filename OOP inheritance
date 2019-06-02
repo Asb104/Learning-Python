@@ -1,0 +1,27 @@
+class Student:
+  def __init__(self, name, school):
+    self.name = name
+    self.school = school
+    self.grades = []
+  def averageGrade(self):
+    return sum(self.grades)/len(self.grades)
+
+#inheritance class
+class WorkingStudent(Student):
+  def __init__(self, name, school, salary):
+    super().__init__(name, school,)
+    self.salary = salary
+
+  def Weekly_salary(self):
+    return self.salary * 40.0
+
+Andrew = WorkingStudent('Andrew', 'Texas State University', 17.00)
+
+Andrew.grades.append(95)
+Andrew.grades.append(90)
+Andrew.grades.append(100)
+print(Andrew.grades)
+#even thought i have called the working student class, i am still able to access the grade list in Student class
+print(Andrew.Weekly_salary())
+print('per week')
+#this will print my weekly salary from CGI for 40 hour weeks
